@@ -1,10 +1,15 @@
 package com.kaori.android.domain.model
 
-data class Perfume (
+data class Perfume(
     val id: Int,
-    val nombre: String,
-    val marca: String,
-    val familia: String,
-    val notas: List<String>,
-    val valoracion: Float
+    val name: String,
+    val brand: String,
+    val family: String,
+    val topNotes: List<String>,
+    val heartNotes: List<String>,
+    val baseNotes: List<String>,
+    val gender: String,
+    val seasons: List<String>,
+    val rating: Float,
+    val description: String?
 )
