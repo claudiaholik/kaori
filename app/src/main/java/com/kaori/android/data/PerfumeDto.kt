@@ -1,18 +1,20 @@
 package com.kaori.android.data
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-data class Perfume(
+@Serializable
+data class PerfumeDto(
     val id: Int,
     val name: String,
     val brand: String,
     val family: String,
-    @SerializedName("notes_top") val notesTop: List<String>,
-    @SerializedName("notes_heart") val notesHeart: List<String>,
-    @SerializedName("notes_base") val notesBase: List<String>,
-    @SerializedName("gender") val targetGender: String,
+    @SerialName("notes_top") val notesTop: List<String>,
+    @SerialName("notes_heart") val notesHeart: List<String>,
+    @SerialName("notes_base") val notesBase: List<String>,
+    @SerialName("gender") val targetGender: String,
     val season: List<String>,
-    @SerializedName("price_eur") val priceEur: Double,
+    @SerialName("price_eur") val priceEur: Double,
     val description: String?
 
 )
