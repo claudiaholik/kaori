@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class PerfumeDto(
+data class gPerfumeDto(
     val id: Int,
     val name: String,
     val brand: String,
